@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = xkeyboard-config
+Target = xkb-dvorak
+
+[Action]
+Description = Restoring dvorak layout for X keyboard...
+Exec = /usr/share/xkb-dvorak/restore
+When = PostTransaction
